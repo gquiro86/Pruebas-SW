@@ -45,8 +45,13 @@ class StatisticsCalculator:
 
     def calcular_varianza(self):
         media = self.calcular_media()
-        varianza = sum((x - media) ** 2 for x in self.data) / len(self.data)
+        sumatoria_cuadrados_diferencias = 0
+        for dato in self.data:
+            diferencia = dato - media
+            sumatoria_cuadrados_diferencias += diferencia * diferencia
+        varianza = sumatoria_cuadrados_diferencias / (len(self.data) - 1)
         return varianza
+
 
     def calcular_desviacion_estandar(self):
         varianza = self.calcular_varianza()
@@ -74,7 +79,7 @@ class StatisticsCalculator:
             print(f"{estadistica}: {valor}")
 
     def escribir_a_archivo(self):
-        with open('ResultadosEstadisticos.txt', 'w') as f:
+        with open('resultados_estadisticos.txt', 'w') as f:
             f.write("Estadísticas Descriptivas\n")
             f.write("------------------------\n")
             for estadistica, valor in self.stats.items():

@@ -1,0 +1,39 @@
+Decimal: -39, Binario: , Hexadecimal: 
+Decimal: -36, Binario: , Hexadecimal: 
+Decimal: 8, Binario: 1000, Hexadecimal: 8
+Decimal: 34, Binario: 100010, Hexadecimal: 22
+Decimal: 17, Binario: 10001, Hexadecimal: 11
+Decimal: 49, Binario: 110001, Hexadecimal: 31
+Decimal: 5, Binario: 101, Hexadecimal: 5
+Decimal: 0, Binario: , Hexadecimal: 
+Decimal: 33, Binario: 100001, Hexadecimal: 21
+Decimal: 12, Binario: 1100, Hexadecimal: C
+Decimal: -6, Binario: , Hexadecimal: 
+Decimal: 27, Binario: 11011, Hexadecimal: 1B
+Decimal: -4, Binario: , Hexadecimal: 
+Decimal: -38, Binario: , Hexadecimal: 
+Decimal: 26, Binario: 11010, Hexadecimal: 1A
+Decimal: 49, Binario: 110001, Hexadecimal: 31
+Decimal: 29, Binario: 11101, Hexadecimal: 1D
+Decimal: 42, Binario: 101010, Hexadecimal: 2A
+Decimal: -16, Binario: , Hexadecimal: 
+Decimal: 34, Binario: 100010, Hexadecimal: 22
+Decimal: 20, Binario: 10100, Hexadecimal: 14
+Decimal: 0, Binario: , Hexadecimal: 
+Decimal: 25, Binario: 11001, Hexadecimal: 19
+Decimal: 45, Binario: 101101, Hexadecimal: 2D
+Decimal: 3, Binario: 11, Hexadecimal: 3
+Decimal: -46, Binario: , Hexadecimal: 
+Decimal: -46, Binario: , Hexadecimal: 
+Decimal: 29, Binario: 11101, Hexadecimal: 1D
+Decimal: 33, Binario: 100001, Hexadecimal: 21
+Decimal: 29, Binario: 11101, Hexadecimal: 1D
+Decimal: 26, Binario: 11010, Hexadecimal: 1A
+Decimal: -5, Binario: , Hexadecimal: 
+Decimal: -36, Binario: , Hexadecimal: 
+Decimal: 12, Binario: 1100, Hexadecimal: C
+Decimal: 45, Binario: 101101, Hexadecimal: 2D
+Decimal: -50, Binario: , Hexadecimal: 
+Decimal: 0, Binario: , Hexadecimal: 
+Decimal: -6, Binario: , Hexadecimal: 
+Tiempo transcurrido: 0.005384922027587891 segundos

@@ -1,0 +1,9 @@
+Estadísticas Descriptivas
+------------------------
+Media: 241.49511400651465
+Mediana: 241.0
+Moda: 393.0
+Varianza: 21229.17236166996
+Desviación Estándar: 145.70234164786083
+Cantidad de Números Válidos: 307
+Tiempo Transcurrido: 0.0002028942108154297
