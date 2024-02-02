@@ -14,7 +14,7 @@ class StatisticsCalculator:
         """Funcion para leer los datos de un archivo."""
         datos = []
         try:
-            with open(self.filename, 'r') as file:
+            with open(self.filename, 'r', encoding='utf-8') as file:
                 for line in file:
                     try:
                         num = float(line.strip())
@@ -35,11 +35,10 @@ class StatisticsCalculator:
     def calcular_mediana(self):
         """Funcion para la mediana."""
         datos_ordenados = sorted(self.data)
-        n = len(datos_ordenados)
-        if n % 2 == 0:
-            return (datos_ordenados[n//2 - 1] + datos_ordenados[n//2]) / 2
-        else:
-            return datos_ordenados[n//2]
+        n_data = len(datos_ordenados)
+        if n_data % 2 == 0:
+            return (datos_ordenados[n_data//2 - 1] + datos_ordenados[n_data//2]) / 2
+        return datos_ordenados[n_data//2]
 
     def calcular_moda(self):
         """Funcion para la moda."""
@@ -92,11 +91,11 @@ class StatisticsCalculator:
 
     def escribir_a_archivo(self):
         """Funcion para grabar los datos en un archivo."""
-        with open('resultados_estadisticos.txt', 'w') as f:
-            f.write("Estadísticas Descriptivas\n")
-            f.write("------------------------\n")
+        with open('resultados_estadisticos.txt', 'w', encoding='utf-8') as archivo_abierto:
+            archivo_abierto.write("Estadísticas Descriptivas\n")
+            archivo_abierto.write("------------------------\n")
             for estadistica, valor in self.stats.items():
-                f.write(f"{estadistica}: {valor}\n")
+                archivo_abierto.write(f"{estadistica}: {valor}\n")
 
 
 if __name__ == "__main__":
@@ -105,8 +104,8 @@ if __name__ == "__main__":
         print("Uso: python computeStatistics.py fileWithData.txt")
         sys.exit(1)
 
-    filename = sys.argv[1]
-    calculator = StatisticsCalculator(filename)
+    FILENAME_FINAL = sys.argv[1]
+    calculator = StatisticsCalculator(FILENAME_FINAL)
     calculator.calcular_estadisticas()
     calculator.imprimir_estadisticas()
     calculator.escribir_a_archivo()
