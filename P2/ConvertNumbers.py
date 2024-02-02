@@ -1,3 +1,4 @@
+  """Programa para convertir números decimales a binarios y Hexadecimales."""
 import sys
 import time
 
@@ -50,6 +51,7 @@ def procesar_archivo(nombre_archivo):
 
 
 if __name__ == "__main__":
+    #MAIN
     if len(sys.argv) != 2:
         print("Uso: python convertNumbers.py archivo_con_datos.txt")
     else:
