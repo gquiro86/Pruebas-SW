@@ -1,0 +1,94 @@
+Total cost of all sales: $166568.23
+Sales Details:
+Sale ID: 1, Sale Date: 01/12/23, Total Cost: $4264.00
+Rustic breakfast     200        $21.32           $4264.00        
+Sale ID: 1, Sale Date: 01/12/23, Total Cost: $517.04
+Sandwich with salad  23         $22.48           $517.04         
+Sale ID: 1, Sale Date: 01/12/23, Total Cost: $188.21
+Raw legums           11         $17.11           $188.21         
+Sale ID: 2, Sale Date: 01/12/23, Total Cost: $6318.39
+Fresh stawberry      221        $28.59           $6318.39        
+Sale ID: 2, Sale Date: 01/12/23, Total Cost: $34.22
+Raw legums           2          $17.11           $34.22          
+Sale ID: 3, Sale Date: 01/12/23, Total Cost: $7072.00
+Green smoothie       400        $17.68           $7072.00        
+Sale ID: 3, Sale Date: 01/12/23, Total Cost: $37.00
+Cuban sandwiche      2          $18.50           $37.00          
+Sale ID: 3, Sale Date: 01/12/23, Total Cost: $54.70
+Hazelnut in black ceramic bowl 2          $27.35           $54.70          
+Sale ID: 4, Sale Date: 01/12/23, Total Cost: $26.03
+Tomatoes             1          $26.03           $26.03          
+Sale ID: 4, Sale Date: 01/12/23, Total Cost: $4795.00
+Plums                250        $19.18           $4795.00        
+Sale ID: 4, Sale Date: 01/12/23, Total Cost: $7017.34
+Fresh blueberries    334        $21.01           $7017.34        
+Sale ID: 5, Sale Date: 01/12/23, Total Cost: $5304.00
+Green smoothie       300        $17.68           $5304.00        
+Sale ID: 5, Sale Date: 01/12/23, Total Cost: $921.40
+Corn                 68         $13.55           $921.40         
+Sale ID: 5, Sale Date: 01/12/23, Total Cost: $604.56
+French fries         33         $18.32           $604.56         
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $914.94
+Ground beef meat burger 78         $11.73           $914.94         
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $54.70
+Hazelnut in black ceramic bowl 2          $27.35           $54.70          
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $2562.15
+Sweet fresh stawberry 87         $29.45           $2562.15        
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $17.48
+Homemade bread       1          $17.48           $17.48          
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $1161.96
+Smoothie with chia seeds 46         $25.26           $1161.96        
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $13.55
+Corn                 1          $13.55           $13.55          
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $38.36
+Plums                2          $19.18           $38.36          
+Sale ID: 6, Sale Date: 01/12/23, Total Cost: $966.46
+Fresh blueberries    46         $21.01           $966.46         
+Sale ID: 7, Sale Date: 01/12/23, Total Cost: $17.68
+Green smoothie       1          $17.68           $17.68          
+Sale ID: 7, Sale Date: 01/12/23, Total Cost: $27.10
+Corn                 2          $13.55           $27.10          
+Sale ID: 7, Sale Date: 01/12/23, Total Cost: $73.28
+French fries         4          $18.32           $73.28          
+Sale ID: 7, Sale Date: 01/12/23, Total Cost: $750.72
+Ground beef meat burger 64         $11.73           $750.72         
+Sale ID: 7, Sale Date: 01/12/23, Total Cost: $54.70
+Hazelnut in black ceramic bowl 2          $27.35           $54.70          
+Sale ID: 8, Sale Date: 01/12/23, Total Cost: $88.35
+Sweet fresh stawberry 3          $29.45           $88.35          
+Sale ID: 8, Sale Date: 01/12/23, Total Cost: $7970.88
+Homemade bread       456        $17.48           $7970.88        
+Sale ID: 8, Sale Date: 01/12/23, Total Cost: $50.52
+Smoothie with chia seeds 2          $25.26           $50.52          
+Sale ID: 8, Sale Date: 02/12/23, Total Cost: $67.75
+Corn                 5          $13.55           $67.75          
+Sale ID: 8, Sale Date: 02/12/23, Total Cost: $12371.10
+Plums                645        $19.18           $12371.10       
+Sale ID: 8, Sale Date: 02/12/23, Total Cost: $-735.35
+Fresh blueberries    -35        $21.01           $-735.35        
+Sale ID: 8, Sale Date: 02/12/23, Total Cost: $35.36
+Green smoothie       2          $17.68           $35.36          
+Sale ID: 9, Sale Date: 02/12/23, Total Cost: $6300.75
+Corn                 465        $13.55           $6300.75        
+Sale ID: 9, Sale Date: 02/12/23, Total Cost: $366.40
+French fries         20         $18.32           $366.40         
+Sale ID: 9, Sale Date: 02/12/23, Total Cost: $46.92
+Ground beef meat burger 4          $11.73           $46.92          
+Sale ID: 9, Sale Date: 02/12/23, Total Cost: $27.35
+Hazelnut in black ceramic bowl 1          $27.35           $27.35          
+Sale ID: 9, Sale Date: 02/12/23, Total Cost: $3857.95
+Sweet fresh stawberry 131        $29.45           $3857.95        
+Sale ID: 9, Sale Date: 02/12/23, Total Cost: $157.32
+Homemade bread       9          $17.48           $157.32         
+Sale ID: 10, Sale Date: 02/12/23, Total Cost: $328.38
+Smoothie with chia seeds 13         $25.26           $328.38         
+Sale ID: 10, Sale Date: 02/12/23, Total Cost: $9186.90
+Corn                 678        $13.55           $9186.90        
+Sale ID: 10, Sale Date: 02/12/23, Total Cost: $6406.12
+Plums                334        $19.18           $6406.12        
+Sale ID: 10, Sale Date: 02/12/23, Total Cost: $72379.45
+Fresh blueberries    3445       $21.01           $72379.45       
+Sale ID: 10, Sale Date: 02/12/23, Total Cost: $-2174.64
+Green smoothie       -123       $17.68           $-2174.64       
+Sale ID: 10, Sale Date: 02/12/23, Total Cost: $6029.75
+Corn                 445        $13.55           $6029.75        
