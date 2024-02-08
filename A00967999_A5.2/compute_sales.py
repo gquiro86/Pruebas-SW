@@ -4,7 +4,7 @@ import sys
 import time
 
 
-# Function to load JSON data from a file
+# Funcion carga JSON
 def load_json_file(filename):
     """ Función para cargar datos de JSON a un archivo """
     try:
@@ -19,7 +19,7 @@ def load_json_file(filename):
         return None
 
 
-# Function to create a price dictionary from the price catalogue
+# Función catálogo precio
 def create_price_dictionary(price_catalogue_input):
     """ Función para crear un diccionario de artículos y su costo """
     price_dictionary_calc = {}
@@ -30,7 +30,7 @@ def create_price_dictionary(price_catalogue_input):
     return price_dictionary_calc
 
 
-# Function to compute total cost for all sales
+# Función Costo Total
 def compute_total_cost(price_catalogue_input_cost, sales_record_input_cost):
     """ Función para calcular el costo total """
     total_cost_compute = 0
@@ -67,20 +67,18 @@ if __name__ == "__main__":
 
     start_time = time.time()
 
-    # Load price catalogue and sales record from JSON files
     price_catalogue = load_json_file(sys.argv[1])
     sales_record = load_json_file(sys.argv[2])
 
     if price_catalogue is None or sales_record is None:
         sys.exit(1)
 
-    # Create price dictionary from the price catalogue
     price_dict = create_price_dictionary(price_catalogue)
 
-    # Compute total cost for all sales and get sale details
+    # Obtener el costo total de los archivos
     total_cost, sale_details = compute_total_cost(price_dict, sales_record)
 
-    # Output results to screen
+    # Graba los resultados
     print(f"Total cost of all sales: ${total_cost:.2f}")
     print("Sales Details:")
     print(f"{'Product':<20} {'Quantity':<10}"
@@ -96,7 +94,7 @@ if __name__ == "__main__":
                   f"${item_sale['Item_Cost']:<15.2f} ${item_sale['Total_Sale']:<15.2f}")
 
 
-    # Output results to file
+    # Graba los resultados en archivo .txt
     with open('sales_results.txt', 'w', encoding='utf-8') as results_file:
         results_file.write(f"Total cost of all sales: ${total_cost:.2f}\n")
         results_file.write("Sales Details:\n")
@@ -112,5 +110,5 @@ if __name__ == "__main__":
     end_time = time.time()
     elapsed_time = end_time - start_time
 
-    # Display elapsed time
+    # Despliega el tiempo total
     print(f"Execution time: {elapsed_time:.4f} seconds")
