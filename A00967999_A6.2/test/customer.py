@@ -4,6 +4,12 @@
 class Customer:
     """ Clase Customer """
     def __init__(self, name, email):
+        if not name:
+            raise ValueError("Customer name cannot be empty")
+        if not isinstance(name, str):
+            raise ValueError("Customer name must be a string")
+        if not email or '@' not in email:
+            raise ValueError("Invalid email address")
         self.name = name
         self.email = email
 
@@ -11,12 +17,17 @@ class Customer:
         """ Mostar information """
         return f"Customer: {self.name}, Email: {self.email}"
 
-    def update_info(self, name=None, email=None):
+    def update_info(self, new_name, new_email):
         """ función para actualizar información de cliente """
-        if name:
-            self.name = name
-        if email:
-            self.email = email
+        if not new_name:
+            raise ValueError("New name cannot be empty")
+        if not isinstance(new_name, str):
+            raise ValueError("New name must be a string")
+        if not new_email or '@' not in new_email:
+            raise ValueError("Invalid new email address")
+
+        self.name = new_name
+        self.email = new_email
 
     def save_customer_data(self, filename):
         """ función para guardar a un cliente """

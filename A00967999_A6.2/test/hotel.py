@@ -5,6 +5,13 @@ import json
 class Hotel:
     """Clase Hotel"""
     def __init__(self, name, location, rooms):
+        if not name:
+            raise ValueError("Hotel name cannot be empty")
+        if not location:
+            raise ValueError("Location cannot be empty")
+        if rooms <= 0:
+            raise ValueError("Number of rooms must be positive")
+        
         self.name = name
         self.location = location
         self.rooms = rooms
@@ -12,8 +19,7 @@ class Hotel:
 
     def display_info(self):
         """Clase Hotel"""
-        return f"Hotel: {self.name}",
-        f"Location: {self.location}, Rooms: {self.rooms}"
+        return f"Hotel: {self.name}, Location: {self.location}, Rooms: {self.rooms}"
 
     def modify_info(self, name=None, location=None, rooms=None):
         """Clase Hotel"""
@@ -25,18 +31,21 @@ class Hotel:
             self.rooms = rooms
 
     def reserve_room(self, customer):
-        """Clase Hotel"""
+        """Funcion para crear una reservación"""
+        if not hasattr(customer, 'name') or not isinstance(customer.name, str) or not customer.name.strip():
+            raise ValueError("Customer object must have a non-empty 'name' attribute")
         self.reservations.append(customer)
         return f"Room reserved for {customer.name} at {self.name}"
+    
+    def cancel_reservation(self, customer):
+        """Funcion para cancelar reservación"""
+        if not customer:
+            raise ValueError("Customer object cannot be None")
+        if customer not in self.reservations:
+            raise ValueError("Customer has no reservation to cancel")
+        self.reservations.remove(customer)
+        return f"Reservation canceled for {customer.name} at {self.name}"
 
-    def cancel_reservation(self, customer_name):
-        """Clase Hotel"""
-        for customer in self.reservations:
-            if customer.name == customer_name:
-                self.reservations.remove(customer)
-                return f"Reservation canceled for {customer_name}",
-                f"at {self.name}"
-        return "Reservation not found"
 
     def create_hotel(self):
         """Clase Hotel"""

@@ -23,8 +23,7 @@ class Reservation:
         with open("reservation.json", "w", encoding='utf-8') as file:
             json.dump(reservations, file)
 
-        return f"Reservation created for {self.customer.name}",
-        f"at {self.hotel.name}"
+        return f"Reservation created for {self.customer.name}, at {self.hotel.name}"
 
     def cancel_reservation(self):
         """ función para cancelar una reservación """
@@ -41,6 +40,5 @@ class Reservation:
                     with open("reservation.json", "w",
                               encoding='utf-8') as file:
                         json.dump(reservations, file)
-                    return f"Reservation canceled for {self.customer.name}",
-                    f"at {self.hotel.name}"
+                    return f"Reservation canceled for {self.customer.name}, at {self.hotel.name}"
         return "Reservation not found"
