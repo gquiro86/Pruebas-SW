@@ -16,13 +16,15 @@ class Reservation:
         except FileNotFoundError:
             reservations = []
 
-        new_reservation = {"customer": self.customer.name, "hotel": self.hotel.name}
+        new_reservation = {"customer": self.customer.name,
+                           "hotel": self.hotel.name}
         reservations.append(new_reservation)
 
         with open("reservation.json", "w", encoding='utf-8') as file:
             json.dump(reservations, file)
 
-        return f"Reservation created for {self.customer.name} at {self.hotel.name}"
+        return f"Reservation created for {self.customer.name}",
+        f"at {self.hotel.name}"
 
     def cancel_reservation(self):
         """ función para cancelar una reservación """
@@ -36,9 +38,9 @@ class Reservation:
             if reservation["customer"] == self.customer.name:
                 if reservation["hotel"] == self.hotel.name:
                     reservations.remove(reservation)
-                    with open("reservation.json", "w", encoding='utf-8') as file:
+                    with open("reservation.json", "w",
+                              encoding='utf-8') as file:
                         json.dump(reservations, file)
-                    return f"Reservation canceled for {self.customer.name} at {self.hotel.name}"
-
-
+                    return f"Reservation canceled for {self.customer.name}",
+                    f"at {self.hotel.name}"
         return "Reservation not found"

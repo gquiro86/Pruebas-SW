@@ -1,5 +1,6 @@
 """ Programa para manejar clientes """
 
+
 class Customer:
     """ Clase Customer """
     def __init__(self, name, email):
@@ -19,14 +20,14 @@ class Customer:
 
     def save_customer_data(self, filename):
         """ función para guardar a un cliente """
-        with open(filename, 'a',encoding='utf-8') as file:
+        with open(filename, 'a', encoding='utf-8') as file:
             file.write(f"{self.name},{self.email}\n")
 
     def delete_customer_data(self, filename, name):
         """ función para borrar a un cliente """
-        with open(filename, 'r',encoding='utf-8') as file:
+        with open(filename, 'r', encoding='utf-8') as file:
             lines = file.readlines()
-        with open(filename, 'w',encoding='utf-8') as file:
+        with open(filename, 'w', encoding='utf-8') as file:
             for line in lines:
                 if line.split(',')[0] != name:
                     file.write(line)
@@ -34,7 +35,7 @@ class Customer:
     def load_customer_data(self, filename):
         """ función para cargar la info de los clientes """
         try:
-            with open(filename, 'r',encoding='utf-8') as file:
+            with open(filename, 'r', encoding='utf-8') as file:
                 data = file.readlines()
                 customers = []
                 for line in data:

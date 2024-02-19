@@ -1,6 +1,7 @@
 """Clase  Hotel"""
 import json
 
+
 class Hotel:
     """Clase Hotel"""
     def __init__(self, name, location, rooms):
@@ -11,7 +12,8 @@ class Hotel:
 
     def display_info(self):
         """Clase Hotel"""
-        return f"Hotel: {self.name}, Location: {self.location}, Rooms: {self.rooms}"
+        return f"Hotel: {self.name}",
+        f"Location: {self.location}, Rooms: {self.rooms}"
 
     def modify_info(self, name=None, location=None, rooms=None):
         """Clase Hotel"""
@@ -32,21 +34,24 @@ class Hotel:
         for customer in self.reservations:
             if customer.name == customer_name:
                 self.reservations.remove(customer)
-                return f"Reservation canceled for {customer_name} at {self.name}"
+                return f"Reservation canceled for {customer_name}",
+                f"at {self.name}"
         return "Reservation not found"
 
     def create_hotel(self):
         """Clase Hotel"""
         try:
-            with open("hotels.json", "r",encoding='utf-8') as file:
+            with open("hotels.json", "r", encoding='utf-8') as file:
                 hotels = json.load(file)
         except FileNotFoundError:
             hotels = []
 
-        new_hotel = {"name": self.name, "location": self.location, "rooms": self.rooms}
+        new_hotel = {"name": self.name,
+                     "location": self.location,
+                     "rooms": self.rooms}
         hotels.append(new_hotel)
 
-        with open("hotels.json", "w",encoding='utf-8') as file:
+        with open("hotels.json", "w", encoding='utf-8') as file:
             json.dump(hotels, file)
 
         return f"Hotel {self.name} created."
@@ -54,7 +59,7 @@ class Hotel:
     def delete_hotel(self):
         """Clase Hotel"""
         try:
-            with open("hotels.json", "r",encoding='utf-8') as file:
+            with open("hotels.json", "r", encoding='utf-8') as file:
                 hotels = json.load(file)
         except FileNotFoundError:
             return "No hotels found to delete."
@@ -62,7 +67,7 @@ class Hotel:
         for hotel in hotels:
             if hotel["name"] == self.name:
                 hotels.remove(hotel)
-                with open("hotels.json", "w",encoding='utf-8') as file:
+                with open("hotels.json", "w", encoding='utf-8') as file:
                     json.dump(hotels, file)
                 return f"Hotel {self.name} deleted."
 
@@ -74,4 +79,5 @@ class Hotel:
 
     def __repr__(self):
         """Clase Hotel"""
-        return f"Hotel(name={self.name}, location={self.location}, rooms={self.rooms})"
+        return f"Hotel(name={self.name}",
+        f"location={self.location}, rooms={self.rooms})"
