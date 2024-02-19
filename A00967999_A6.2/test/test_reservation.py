@@ -2,7 +2,7 @@ import unittest
 from reservation import Reservation
 from customer import Customer
 from hotel import Hotel
-import HtmlTestRunner
+#import HtmlTestRunner
 
 class TestReservationMethods(unittest.TestCase):
     def test_create_reservation(self):
@@ -19,4 +19,4 @@ class TestReservationMethods(unittest.TestCase):
         self.assertEqual(reservation.cancel_reservation(), "Reservation canceled for Gerardo Quiroga at Hotel Fiesta Inn")
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='reservation_reports'))
+    unittest.main()

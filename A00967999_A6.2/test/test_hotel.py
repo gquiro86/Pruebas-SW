@@ -1,6 +1,5 @@
 import unittest
-from app.hotel import Hotel 
-import HtmlTestRunner
+from hotel import Hotel 
 
 class TestHotelMethods(unittest.TestCase):
     def test_display_info(self):
@@ -19,4 +18,4 @@ class TestHotelMethods(unittest.TestCase):
         self.assertNotIn("John Doe", [customer.name for customer in hotel.reservations])
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='hotel_reports'))
+    unittest.main()

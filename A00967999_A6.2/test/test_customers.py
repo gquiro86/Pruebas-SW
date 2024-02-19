@@ -1,6 +1,6 @@
 import unittest
 from customer import Customer
-import HtmlTestRunner
+#import HtmlTestRunner
 
 class TestCustomerMethods(unittest.TestCase):
     def test_display_info(self):
@@ -14,4 +14,4 @@ class TestCustomerMethods(unittest.TestCase):
         self.assertEqual(customer.email, "dulce@hotmail.com")
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='customer_reports'))
+    unittest.main()
